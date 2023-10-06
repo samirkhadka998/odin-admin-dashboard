@@ -1,21 +1,26 @@
 
 
-*{
+:root{
+    --pink : pink;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    
-    :root{
-        --pink : pink;
-    }
-    
-    .wrapper {
-        height: 100vh;
-        background: aliceblue;
-        display: grid;
-        grid-template: 2fr 7fr/ 1fr 3fr;
-    }
+}
+
+
+
+.wrapper {
+    height: 100vh;
+    background: aliceblue;
+    display: grid;
+    grid-template: 2fr 7fr/ 1fr 3fr;
+}
+
+
+
 
 header {
     background: #90bfd9;
@@ -36,4 +41,20 @@ main {
     grid-area: 2/2/3/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+.detail {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project>ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(287px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    height: 91%;
+}
+
+ul{
+    list-style: none;
 }
