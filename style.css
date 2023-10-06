@@ -1,0 +1,7 @@
+:root{
+    --pink : pink;
+}
+
+body{
+    background-color: var(--pink);
+}
